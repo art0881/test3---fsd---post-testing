@@ -7,6 +7,7 @@ import React from 'react'
 import AnimatedBlock from './ui/gsap';
 import AmimateHead from './ui/headerGsap';
 
+
 const rubik = Rubik({ subsets: ['latin'] })
 
 export const metadata = {
@@ -17,11 +18,12 @@ export const metadata = {
  import { ReactQueryProvider } from './ReactQueryProvider';
 
 
+
 const RootLayout =({ children })=> {
   return (
     <html lang="en">
       <head>
-      <link rel="icon" href='/red_logo.png' />
+      <link rel="icon" href='/logo.png' />
       </head>
       <body className={rubik.className}>
        
