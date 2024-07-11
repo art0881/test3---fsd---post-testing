@@ -87,7 +87,7 @@ const PostsComponent = () => {
 }
   return (
     <div className='tx-center '>
-      <h1>Привет</h1>
+      <h1>Посты</h1>
       <form className='formContainer' onSubmit={handleSubmit}>
         <input
           type="text"
