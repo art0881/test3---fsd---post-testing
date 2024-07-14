@@ -1,7 +1,14 @@
 import React from 'react'
+import Animation from '../../shared/animation/Page/Gsap';
+import Aos from '../../shared/animation/Page/Gsap/AOS/aosClient';
 
 const PageText = () => {
   return (
+    <div className='tx-center'>
+    <h1>Page</h1>
+  <br/>
+    <Animation>
+ <Aos>
     <div>
         <p data-aos="fade" className="block_info">
     Next.js — это среда JavaScript для быстрого и простого создания статических веб-страниц 
@@ -63,6 +70,9 @@ const PageText = () => {
      voluptates maxime ex sunt inventore quia recusandae dolorem mollitia excepturi 
      libero eos at quaerat!
 </p>
+    </div>
+    </Aos>
+    </Animation>
     </div>
   )
 }

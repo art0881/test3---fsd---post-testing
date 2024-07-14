@@ -3,7 +3,7 @@
 
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
-import '../globals.css'
+import '../../../../app/globals.css'
 
 const AnimatedBlock = ({ children }) => {
   const blockRef = useRef(null);

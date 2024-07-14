@@ -2,13 +2,15 @@
 
 import css from './Header.module.css'
 import Link from 'next/link'
-import '../globals.css'
+import '../../app/globals.css'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
+import Animation from '../../shared/animation/Header/index';
 
 const Navbar= () => {
    const pathname = usePathname()
   return (
+    <Animation >
     <header className='header'>
       <div className= {css.flexNavbar}> 
         <div><Image alt='логотип' width={50} height={50} src='/logo.png'></Image></div>
@@ -17,6 +19,7 @@ const Navbar= () => {
         <Link className={`${pathname == '/users' ? 'active' : ''}`} href='/users'>Пользователи</Link>
        </div></div>
     </header>
+    </Animation>
   )
 }
 
