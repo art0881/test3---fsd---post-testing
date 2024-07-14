@@ -26,6 +26,8 @@ if (isLoading) return <h2 className="text-primary">Загрузка...</h2>;
        <div className="block_info tx-center">
             <h3>{data.name}</h3>
             <p>{data.email}</p>
+            <p>Город: {data.address.city}</p>
+            <p>Улица: {data.address.street}</p>
             <Link href="/users" className="button w100" >Назад к пользователям</Link>
         </div>
   </div>
