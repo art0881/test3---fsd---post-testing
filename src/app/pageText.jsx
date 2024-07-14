@@ -3,12 +3,12 @@ import React from 'react'
 const PageText = () => {
   return (
     <div>
-        <p className="block_info">
+        <p data-aos="fade" className="block_info">
     Next.js — это среда JavaScript для быстрого и простого создания статических веб-страниц 
     и онлайн-приложений на основе React. 
     Он позволяет создавать отличные веб-приложения для различных платформ, включая Windows, Linux и Mac.
 </p>
-<p className="block_info">
+<p data-aos="fade" className="block_info">
     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia voluptatem 
     nam ipsam accusantium, sequi fugit possimus
      voluptates maxime ex sunt inventore quia recusandae dolorem mollitia excepturi 

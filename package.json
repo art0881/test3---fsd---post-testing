@@ -18,7 +18,8 @@
     "overlayscrollbars-react": "^0.5.6",
     "react": "^18",
     "react-dom": "^18",
-    "react-query": "^3.39.3"
+    "react-query": "^3.39.3",
+    "yarn": "^1.22.22"
   },
   "devDependencies": {
     "@types/node": "^20",
@@ -30,5 +31,9 @@
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/art0881/test3---fsd---post-testing.git",
+  "author": "art0881 <art89674010881@mail.ru>",
+  "license": "MIT"
 }

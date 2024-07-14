@@ -7,7 +7,8 @@ import { useEffect } from 'react';
 const aosClient = ({children}) => {
     useEffect(() => {
         AOS.init({
-          duration: 2000, // Длительность анимации в миллисекундах
+          duration: 2000, 
+          once: true 
         });
       }, []);
   return <>{children}</>
