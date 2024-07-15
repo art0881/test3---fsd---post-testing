@@ -2,7 +2,7 @@
 
 import css from './Header.module.css'
 import Link from 'next/link'
-import '../../app/globals.css'
+import '../../../app/globals.css'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import Animation from '../../shared/animation/Header/index';

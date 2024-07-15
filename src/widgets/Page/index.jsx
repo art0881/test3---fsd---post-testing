@@ -1,6 +1,6 @@
 import React from 'react'
 import Animation from '../../shared/animation/Page/Gsap';
-import Aos from '../../shared/animation/Page/Gsap/AOS/aosClient';
+import Aos from '../../shared/animation/Page/AOS/aosClient';
 
 const PageText = () => {
   return (

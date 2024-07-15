@@ -3,11 +3,14 @@ import React from 'react'
 import { useQuery } from 'react-query';
 import Link from 'next/link';
 
-const fetchUser = async (id) => {
-  const response = await fetch("https://jsonplaceholder.typicode.com/users/" + id);
-  return response.json();
-};
 const User = ({params}) => {
+  // env ключ
+  const apiUrl = process.env.NEXT_PUBLIC_JSONPLACEHOLDER;
+  
+  const fetchUser = async (id) => {
+    const response = await fetch(`${apiUrl}/${id}`);
+    return response.json();
+  };
 
 
 // Используем хук useQuery для получения данных

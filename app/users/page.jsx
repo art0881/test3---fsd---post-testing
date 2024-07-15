@@ -4,10 +4,12 @@ import { useQuery } from 'react-query'
 import '../globals.css'
 import Link from 'next/link'
 
+
 const Users = () => {
+  const apiUrl = process.env.NEXT_PUBLIC_JSONPLACEHOLDER;
     // Функция для запроса пользователей
     const fetchUsers = async () => {
-        const response = await fetch("https://jsonplaceholder.typicode.com/users");
+        const response = await fetch(`${apiUrl}`);
         return response.json();
     };
 

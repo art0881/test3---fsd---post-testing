@@ -1,10 +1,10 @@
 
 import { Rubik } from 'next/font/google'
 import './globals.css'
-import Navbar from "../widgets/Header"
-import Footer from "../widgets/Footer"
+import Navbar from "../src/widgets/Header"
+import Footer from "../src/widgets/Footer"
 import React from 'react'
-import { ReactQueryProvider } from '../reactQuery';
+import { ReactQueryProvider } from '../src/reactQuery';
 
 
 

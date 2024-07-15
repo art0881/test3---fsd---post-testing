@@ -2,7 +2,7 @@
 
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
-import '../../../app/globals.css'
+import '../../../../app/globals.css'
 
 const Header = ({children}) => {
   // Создаём ссылку на элемент шапки
