@@ -3,14 +3,14 @@ import React from 'react'
 import { useQuery } from 'react-query'
 import '../globals.css'
 import Link from 'next/link'
-
+import axios from 'axios'
 
 const Users = () => {
   const apiUrl = process.env.NEXT_PUBLIC_JSONPLACEHOLDER;
     // Функция для запроса пользователей
     const fetchUsers = async () => {
-        const response = await fetch(`${apiUrl}`);
-        return response.json();
+        const {data} = await axios.get(`${apiUrl}`);
+        return data;
     };
 
     // Используем хук useQuery для получения данных

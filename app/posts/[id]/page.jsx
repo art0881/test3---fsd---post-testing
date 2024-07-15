@@ -2,12 +2,18 @@
 import React from 'react'
 import { useQuery } from 'react-query';
 import Link from 'next/link';
+import axios from 'axios';
 
-const fetchPost = async (id) => {
-  const response = await fetch("http://localhost:4000/posts/" + id);
-  return response.json();
-};
 const User = ({params}) => {
+  
+  // env ключ
+  const apiUrl = process.env.NEXT_PUBLIC_API;
+  const postUrl = process.env.NEXT_PUBLIC_API_POSTS;
+
+  const fetchPost = async (id) => {
+    const {data} = await axios.get(`${apiUrl}${postUrl}/` + id);
+    return data;
+  };
 
 
 // Используем хук useQuery для получения данных

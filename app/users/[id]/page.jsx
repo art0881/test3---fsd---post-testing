@@ -2,14 +2,15 @@
 import React from 'react'
 import { useQuery } from 'react-query';
 import Link from 'next/link';
+import axios from 'axios';
 
 const User = ({params}) => {
   // env ключ
   const apiUrl = process.env.NEXT_PUBLIC_JSONPLACEHOLDER;
   
   const fetchUser = async (id) => {
-    const response = await fetch(`${apiUrl}/${id}`);
-    return response.json();
+    const {data} = await axios.get(`${apiUrl}/${id}`);
+    return data;
   };
 
 

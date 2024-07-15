@@ -5,21 +5,24 @@ import '../globals.css'
 import { useQueryClient, useMutation, useQuery } from 'react-query';
 import Link from 'next/link';
 
+  // env ключ
+  const apiUrl = process.env.NEXT_PUBLIC_API;
+  const postUrl = process.env.NEXT_PUBLIC_API_POSTS;
 // Функция для загрузки постов с сервера
 const fetchPosts = async () => {
-  const { data } = await axios.get('http://localhost:4000/posts');
+  const { data } = await axios.get(`${apiUrl}${postUrl}`);
   return data;
 };
 
 // Функция для добавления нового поста
 const addPost = async ({ title, content }) => {
-  const { data } = await axios.post('http://localhost:4000/posts', { title, content });
+  const { data } = await axios.post(`${apiUrl}${postUrl}`, { title, content });
   return data;
 };
 
 // Функция для удаления поста
 const deletePost = async (postId) => {
-  await axios.delete(`http://localhost:4000/posts/${postId}`);
+  await axios.delete(`${apiUrl}${postUrl}${postId}`);
 };
 
 // Компонент PostsComponent
